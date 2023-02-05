@@ -1,0 +1,17 @@
+server:
+  port: 7071
+  error:
+    include-binding-errors: always
+    include-message: always
+---
+spring:
+  datasource:
+    username: postgres
+    password: passw0rd123
+    url: jdbc:postgresql://35.239.179.31:5432/postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+       format-sql: true
