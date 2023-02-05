@@ -1,0 +1,4 @@
+Az login
+Az show account
+az vm list-sizes --location westus -o table
+SOMETHING="some value"
