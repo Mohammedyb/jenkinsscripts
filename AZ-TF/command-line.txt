@@ -11,3 +11,7 @@ az login
 az aks get-credentials --resource-group mohammed_devops --name mohammed_devops_aks
 3- go the k8s folder and deploy your yaml file
 kubectl apply -f deployment.yml
+
+
+//ssh
+ssh -i C:\Users\moham\Downloads\jj_key.pem
