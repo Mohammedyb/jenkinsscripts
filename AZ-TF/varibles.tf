@@ -16,7 +16,7 @@ variable "kubernetes_clusters" {
             "dns_prefix"        = "mohammed-devops",
             "node_count"        = 1,
             "node_pool_name"    = "development"
-            "vm_size"           = "standard_d2ads_v5"
+            "vm_size"           = "Standard_B2s"
         }
     ]
 }
@@ -40,27 +40,21 @@ variable "resource_tags" {
 ### Variables from *.auto.tfvars
 variable "tenant_id" {
     type        = string
-     default = [
-        {
-            "name" = "23dc9a96-cfb9-476d-999c-2927e88cd1b6"
-       
-        }
 }
 variable "subscription_id" {
     type        = string
-    default = [
-        {
-            "name" = "c7f01de4-8043-4af7-9031-6c23fc09d3d0"
-       
-        }
 }
 variable "subscription_name" {
     type        = string
-    default = [
-        {
-            "name" = "Azure subscription 1"
-       
-        }
 }
 
+#  "cloudName": "AzureCloud",
+#     "homeTenantId": "76955bbc-806c-4944-9c3a-c7c5692ecf8e",
+#     "id": "12cc1b79-4ffc-4110-9810-647cb5dbb33a",
+#     "isDefault": true,
+#     "managedByTenants": [],
+#     "name": "Azure subscription 1",
+#     "state": "Enabled",
+#     "tenantId": "76955bbc-806c-4944-9c3a-c7c5692ecf8e",
+   
 
