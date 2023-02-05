@@ -40,22 +40,27 @@ variable "resource_tags" {
 ### Variables from *.auto.tfvars
 variable "tenant_id" {
     type        = string
+     default = [
+        {
+            "name" = "76955bbc-806c-4944-9c3a-c7c5692ecf8e"
+       
+        }
 }
 variable "subscription_id" {
     type        = string
+    default = [
+        {
+            "name" = ""
+       
+        }
 }
 variable "subscription_name" {
     type        = string
+    default = [
+        {
+            "name" = "Azure subscription 1"
+       
+        }
 }
 
-#  "cloudName": "AzureCloud",
-#     "homeTenantId": "76955bbc-806c-4944-9c3a-c7c5692ecf8e",
-#     "id": "12cc1b79-4ffc-4110-9810-647cb5dbb33a",
-#     "isDefault": true,
-#     "managedByTenants": [],
-#     "name": "Azure subscription 1",
-#     "state": "Enabled",
-#     "tenantId": "76955bbc-806c-4944-9c3a-c7c5692ecf8e",
-#     "user": {
-#       "name": "mohammed.bubshait@revature.net",
-#       "type": "user"
+
