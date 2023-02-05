@@ -42,7 +42,7 @@ variable "tenant_id" {
     type        = string
      default = [
         {
-            "name" = "76955bbc-806c-4944-9c3a-c7c5692ecf8e"
+            "name" = "23dc9a96-cfb9-476d-999c-2927e88cd1b6"
        
         }
 }
@@ -50,7 +50,7 @@ variable "subscription_id" {
     type        = string
     default = [
         {
-            "name" = ""
+            "name" = "c7f01de4-8043-4af7-9031-6c23fc09d3d0"
        
         }
 }
