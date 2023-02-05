@@ -2,3 +2,12 @@ Az login
 Az show account
 az vm list-sizes --location westus -o table
 SOMETHING="some value"
+
+
+// Kubectl
+1- login Azure account 
+az login
+2- connect to the cluster
+az aks get-credentials --resource-group mohammed_devops --name mohammed_devops_aks
+3- go the k8s folder and deploy your yaml file
+kubectl apply -f deployment.yml
