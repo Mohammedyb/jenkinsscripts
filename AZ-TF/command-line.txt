@@ -14,4 +14,6 @@ kubectl apply -f deployment.yml
 
 
 //ssh
-ssh -i C:\Users\moham\Downloads\jj_key.pem azureuser@172.174.129.11
+ssh -i C:\Users\moham\Downloads\jj_key.pem azureuser@172
+
+ssh -i C:\Users\moham\Downloads\jj_key(1).pem azureuser@74.235
