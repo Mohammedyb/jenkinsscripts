@@ -1,3 +1,12 @@
+// Kubectl
+1- login Azure account 
+az login
+2- connect to the cluster
+az aks get-credentials --resource-group mohammed_devops --name mohammed_devops_aks
+3- go the k8s folder and deploy your yaml file
+kubectl apply -f deployment.yml
+
+
 // Create a Namespace for Jenkins. It is good to categorize all the DevOps tools as a separate namespace from other applications.
 
 kubectl create namespace devops-tools
