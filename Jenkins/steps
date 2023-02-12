@@ -16,5 +16,43 @@ kubectl get nodes
 
 kubectl create -f volume.yaml
 
-//
+//Create the deployment using kubectl.
+
+kubectl apply -f deployment.yaml
+
+//Check the deployment status.
+
+kubectl get deployments -n devops-tools
+
+//Now, you can get the deployment details using the following command.
+
+kubectl describe deployments --namespace=devops-tools
+
+//Create the Jenkins service using kubectl.
+
+kubectl apply -f service.yaml
+
+//Jenkins will ask for the initial Admin password when you access the dashboard for the first time.
+
+// You can get that from the pod logs either from the Kubernetes dashboard or CLI. You can get the pod details using the following CLI command.
+
+kubectl get pods --namespace=devops-tools
+
+//With the pod name, you can get the logs as shown below. Replace the pod name with your pod name.
+
+kubectl logs jenkins-deployment-2539456353-j00w5 --namespace=devops-tools
+
+//The password can be found at the end of the log.
+
+//Alternatively, you can run the exec command to get the password directly from the location as shown below.
+
+kubectl exec -it jenkins-559d8cd85c-cfcgk cat /var/jenkins_home/secrets/initialAdminPassword -n devops-tools
+
+
+
+
+
+
+
+
 
