@@ -1,0 +1,20 @@
+// Create a Namespace for Jenkins. It is good to categorize all the DevOps tools as a separate namespace from other applications.
+
+kubectl create namespace devops-tools
+
+// Now create the service account using kubectl.
+
+kubectl apply -f serviceAccount.yaml
+
+// Important Note: Replace 'worker-node01' with any one of your cluster worker nodes hostname.
+
+// You can get the worker node hostname using the kubectl.
+
+kubectl get nodes
+
+// Let’s create the volume using kubectl
+
+kubectl create -f volume.yaml
+
+//
+
