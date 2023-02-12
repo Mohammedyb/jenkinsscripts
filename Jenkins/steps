@@ -15,7 +15,7 @@ kubectl create namespace devops-tools
 
 kubectl apply -f serviceAccount.yaml
 
-// Important Note: Replace 'worker-node01' with any one of your cluster worker nodes hostname.
+// Important Note: Replace 'worker-node01' with any one of your cluster worker nodes hostname. in volume.yaml
 
 // You can get the worker node hostname using the kubectl.
 
